@@ -1,0 +1,175 @@
+/* ==========================================
+   Global Reset & Layout Setup
+   ========================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background-color: #1e1e24; /* Outer background wrapper */
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ==========================================
+   Top Navigation Bar Container
+   ========================================== */
+.Top-navigation {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  height: 68px;
+  padding: 0 32px;
+  border-bottom: 1px solid #f0f0f0;
+  width: 100%;
+}
+
+/* ==========================================
+   Brand Logo & Title
+   ========================================== */
+.brandImgContainer {
+  width: 36px;
+  height: 36px;
+  background-color: #5551ff; /* Placeholder brand background */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.brandImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.brandName {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e1b4b;
+  margin-right: 48px;
+  white-space: nowrap;
+}
+
+/* ==========================================
+   Navigation Links
+   ========================================== */
+.NavLinks {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navItem {
+  background: transparent;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.navItem:hover {
+  color: #111827;
+}
+
+/* Highlight "Overview" button to match the image active state */
+.navItem:first-child {
+  background-color: #f0edff;
+  color: #5551ff;
+  font-weight: 600;
+}
+
+/* ==========================================
+   Right-Side Controls (Streak, Bell, Profile)
+   ========================================== */
+
+/* Pushes everything from accountControls onwards to the right edge */
+.accountControls {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.streakContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-right: 20px;
+  margin-right: 20px;
+  border-right: 1px solid #e5e7eb; /* Vertical separator bar */
+}
+
+.streakImgContainer {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.streakImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  white-space: nowrap;
+}
+
+/* Bell Icon Wrapper */
+.bellImgContainer {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.bellImgContainer:hover {
+  background-color: #f3f4f6;
+}
+
+.bellImg {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* User Profile Avatar Wrapper */
+.pfpContainer {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #ede9fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.pfp {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
