@@ -1,0 +1,60 @@
+.settings-page {
+  max-width: 850px;
+  margin: auto;
+}
+
+.settings-section {
+  margin-bottom: 18px;
+}
+
+.settings-section h2 {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+
+.settings-section > p {
+  color: #77829c;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.setting-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 18px 0;
+  border-bottom: 1px solid #edf0f6;
+}
+
+.setting-row:last-child {
+  border-bottom: 0;
+}
+
+.setting-row > span {
+  display: grid;
+  gap: 6px;
+}
+
+.setting-row strong {
+  font-size: 12px;
+}
+
+.setting-row small {
+  color: #8791aa;
+  font-size: 11px;
+}
+
+.setting-row input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #5759ef;
+}
+
+.setting-row select {
+  max-width: 150px;
+  padding: 9px;
+  border: 1px solid #e0e5f0;
+  border-radius: 8px;
+  background: #fff;
+}

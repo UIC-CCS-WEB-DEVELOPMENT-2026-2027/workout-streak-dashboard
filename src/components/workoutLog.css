@@ -1,0 +1,25 @@
+.log-page {
+  max-width: 650px;
+  margin: auto;
+}
+
+.log-form {
+  display: grid;
+  gap: 2px;
+}
+
+.log-success {
+  padding: 12px;
+  border-radius: 9px;
+  color: #187a62;
+  background: #e2f5ee;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.log-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 8px;
+}

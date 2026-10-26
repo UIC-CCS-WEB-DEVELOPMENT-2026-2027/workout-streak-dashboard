@@ -1,0 +1,96 @@
+
+.workout-page {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.workout-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 30px;
+  border-radius: 18px;
+  background: #d8f4f4;
+}
+
+.workout-intro span {
+  color: #5559ee;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.workout-intro h2 {
+  margin: 10px 0;
+  font-size: 27px;
+}
+
+.workout-intro p {
+  color: #488c96;
+  font-size: 13px;
+}
+
+.workout-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.workout-option {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.workout-option-info {
+  flex: 1;
+}
+
+.workout-option-info h3 {
+  margin: 0 0 6px;
+  font-size: 15px;
+}
+
+.workout-option-info p {
+  margin: 0;
+  color: #8791aa;
+  font-size: 12px;
+}
+
+.workout-symbol {
+  display: grid;
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 12px;
+  color: #5759ef;
+  background: #eae7ff;
+}
+
+.manual-workout-link {
+  margin-top: 20px;
+  border: 0;
+  color: #5759ef;
+  background: none;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+@media (max-width: 560px) {
+  .workout-intro {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 22px;
+  }
+
+  .workout-option {
+    flex-wrap: wrap;
+  }
+
+  .workout-option .secondary-button {
+    margin-left: auto;
+  }
+}
+
+
