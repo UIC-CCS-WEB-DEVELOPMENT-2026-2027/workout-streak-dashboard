@@ -212,14 +212,22 @@
   position: absolute;
   right: 7%;
   top: 20%;
-  display: grid;
-  width: 1px;
-  height: 10px;
-  place-items: center;
-  border: 16px solid #b5e7e7;
-  border-radius: 50%;
-  font-size: 65px;
+  z-index: 2;
+  width: auto;
+  height: auto;
+  border: none;
+  background: transparent;
+  border-radius: 0;
+  display: block;
 }
+
+.welcome-figure img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  display: block;
+}
+
 
 .stats-grid {
   display: grid;

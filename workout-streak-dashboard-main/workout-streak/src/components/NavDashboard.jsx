@@ -101,7 +101,7 @@ function NavDashboard({ currentScreen, onNavigate }) {
                 ♨ Keep your 4-day streak alive ↗
               </button>
               <div className="welcome-figure" aria-hidden="true">
-                <img></img>
+                <img src="person.png" alt="Figure"></img>
               </div>
             </article>
 
