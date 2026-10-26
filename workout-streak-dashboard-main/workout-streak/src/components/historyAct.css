@@ -1,0 +1,99 @@
+.history-page {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.history-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.history-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.history-summary .card {
+  display: grid;
+  gap: 12px;
+}
+
+.history-summary span {
+  color: #8791aa;
+  font-size: 12px;
+}
+
+.history-summary strong {
+  font-size: 28px;
+}
+
+.history-list h2 {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 16px 0;
+  border-bottom: 1px solid #edf0f6;
+}
+
+.history-item:last-child {
+  border-bottom: 0;
+}
+
+.history-icon {
+  display: grid;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border-radius: 12px;
+  color: #5759ef;
+  background: #eae7ff;
+}
+
+.history-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.history-info strong,
+.history-metric strong {
+  font-size: 12px;
+}
+
+.history-info p {
+  margin: 5px 0 0;
+  color: #8791aa;
+  font-size: 11px;
+}
+
+.history-metric {
+  display: grid;
+  gap: 5px;
+  text-align: right;
+}
+
+.history-metric span {
+  color: #8791aa;
+  font-size: 10px;
+}
+
+@media (max-width: 600px) {
+  .history-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .history-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}

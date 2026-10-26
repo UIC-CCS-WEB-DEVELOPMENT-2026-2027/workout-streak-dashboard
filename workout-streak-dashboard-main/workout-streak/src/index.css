@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Inter, Arial, sans-serif;
+  color: #242b43;
+  background: #f5f7fb;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.screen-content {
+  max-width: 1440px;
+  min-height: calc(100vh - 58px);
+  margin: 0 auto;
+  padding: 28px 4%;
+}
+
+.screen-title {
+  margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 750;
+}
+
+.screen-subtitle {
+  margin: 0 0 26px;
+  color: #8490aa;
+  font-size: 13px;
+}
+
+.card {
+  padding: 22px;
+  background: #fff;
+  border: 1px solid #e9edf5;
+  border-radius: 17px;
+}
+
+.primary-button {
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 18px;
+  color: #fff;
+  background: #5759ef;
+  font-weight: 650;
+}
+
+.primary-button:hover {
+  background: #4446d9;
+}
+
+.secondary-button {
+  border: 1px solid #e1e5f1;
+  border-radius: 10px;
+  padding: 11px 16px;
+  color: #5156e9;
+  background: #fff;
+  font-weight: 650;
+}
+
+.form-field {
+  display: grid;
+  gap: 7px;
+  margin-bottom: 17px;
+}
+
+.form-field label {
+  color: #5d6781;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.form-field input,
+.form-field select {
+  width: 100%;
+  padding: 12px 13px;
+  border: 1px solid #e0e5f0;
+  border-radius: 9px;
+  outline: none;
+  background: #fff;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  border-color: #5759ef;
+}
+
+@media (max-width: 700px) {
+  .screen-content {
+    padding: 20px 15px;
+  }
+
+  .screen-title {
+    font-size: 24px;
+  }
+}
