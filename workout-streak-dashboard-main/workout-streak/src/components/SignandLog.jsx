@@ -17,7 +17,7 @@ function SignandLog({ onNavigate }) {
     <section className="auth-page">
       <form className="card auth-card" onSubmit={handleSubmit}>
         <div className="auth-brand">
-          <span className="brand-mark">A</span>
+          <span className="brand-mark"><img src="Logo.png" alt="Logo"></img></span>
           Aeroutine
         </div>
 
