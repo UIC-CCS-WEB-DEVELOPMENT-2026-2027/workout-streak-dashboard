@@ -1,0 +1,110 @@
+/* file name: historyAct.css */
+.history-page {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.history-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.history-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.history-summary .card {
+  display: grid;
+  gap: 12px;
+}
+
+.history-summary span {
+  color: var(--text-muted);
+  font-size: 12px;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.history-summary strong {
+  font-size: 28px;
+  color: var(--purple-primary);
+  font-weight: 800;
+}
+
+.history-list h2 {
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 16px 0;
+  border-bottom: var(--purple-dashed-muted);
+}
+
+.history-item:last-child {
+  border-bottom: 0;
+}
+
+.history-icon {
+  display: grid;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border-radius: 4px;
+  color: var(--purple-primary);
+  background: var(--purple-light);
+  border: var(--purple-dashed-muted);
+}
+
+.history-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.history-info strong,
+.history-metric strong {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.history-info p {
+  margin: 5px 0 0;
+  color: var(--text-muted);
+  font-size: 11px;
+  font-family: var(--font-mono);
+}
+
+.history-metric {
+  display: grid;
+  gap: 5px;
+  text-align: right;
+}
+
+.history-metric span {
+  color: var(--text-muted);
+  font-size: 10px;
+  font-family: var(--font-mono);
+}
+
+@media (max-width: 600px) {
+  .history-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .history-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}

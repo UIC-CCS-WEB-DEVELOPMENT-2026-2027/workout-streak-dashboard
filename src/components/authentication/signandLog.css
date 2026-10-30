@@ -1,0 +1,56 @@
+/* file name: signandLog.css */
+.auth-page {
+  display: grid;
+  min-height: 70vh;
+  place-items: center;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 30px;
+}
+
+.auth-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+  font-weight: 800;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+}
+
+.auth-card h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.auth-submit {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.auth-back {
+  display: block;
+  margin: 18px auto 0;
+  border: 0;
+  color: var(--purple-primary);
+  background: none;
+  font-size: 12px;
+  font-family: var(--font-mono);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.auth-message {
+  padding: 10px;
+  border-radius: 4px;
+  color: #5b21b6;
+  background: #ede9fe;
+  border: var(--purple-dashed-muted);
+  font-size: 11px;
+  font-family: var(--font-mono);
+  line-height: 1.6;
+}

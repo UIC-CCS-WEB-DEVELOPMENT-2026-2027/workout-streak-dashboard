@@ -1,0 +1,28 @@
+/* file name: workoutLog.css */
+.log-page {
+  max-width: 650px;
+  margin: auto;
+}
+
+.log-form {
+  display: grid;
+  gap: 2px;
+}
+
+.log-success {
+  padding: 12px;
+  border-radius: 4px;
+  color: #166534;
+  background: #dcfce7;
+  border: var(--purple-dashed-muted);
+  font-size: 12px;
+  font-family: var(--font-mono);
+  line-height: 1.6;
+}
+
+.log-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 8px;
+}

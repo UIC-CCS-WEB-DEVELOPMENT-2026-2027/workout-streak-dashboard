@@ -1,0 +1,67 @@
+/* file name: settings.css */
+.settings-page {
+  max-width: 850px;
+  margin: auto;
+}
+
+.settings-section {
+  margin-bottom: 18px;
+}
+
+.settings-section h2 {
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.settings-section>p {
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.7;
+  font-family: var(--font-mono);
+}
+
+.setting-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 18px 0;
+  border-bottom: var(--purple-dashed-muted);
+}
+
+.setting-row:last-child {
+  border-bottom: 0;
+}
+
+.setting-row>span {
+  display: grid;
+  gap: 6px;
+}
+
+.setting-row strong {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.setting-row small {
+  color: var(--text-muted);
+  font-size: 11px;
+  font-family: var(--font-mono);
+}
+
+.setting-row input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--purple-primary);
+}
+
+.setting-row select {
+  max-width: 150px;
+  padding: 9px;
+  border: var(--purple-dashed);
+  border-radius: 4px;
+  background: #fff;
+  font-family: var(--font-mono);
+  font-size: 12px;
+}

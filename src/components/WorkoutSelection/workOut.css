@@ -1,0 +1,108 @@
+/* file name: workOut.css */
+.workout-page {
+  max-width: 1500px;
+  margin: auto;
+}
+
+.workout-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 30px;
+  border-radius: 4px;
+  background: var(--purple-light);
+  border: var(--purple-dashed);
+  box-shadow: 4px 4px 0 rgba(87, 89, 239, 0.05);
+}
+
+.workout-intro span {
+  color: var(--purple-primary);
+  font-size: 11px;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.workout-intro h2 {
+  margin: 10px 0;
+  font-size: 27px;
+  font-weight: 800;
+}
+
+.workout-intro p {
+  color: var(--text-muted);
+  font-size: 13px;
+  font-family: var(--font-mono);
+}
+
+.workout-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.workout-option {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border: var(--purple-dashed);
+  border-radius: 4px;
+}
+
+.workout-option-info {
+  flex: 1;
+}
+
+.workout-option-info h3 {
+  margin: 0 0 6px;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.workout-option-info p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 12px;
+  font-family: var(--font-mono);
+}
+
+.workout-symbol {
+  display: grid;
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 4px;
+  color: var(--purple-primary);
+  background: var(--purple-light);
+  border: var(--purple-dashed-muted);
+}
+
+.manual-workout-link {
+  margin-top: 20px;
+  border: 0;
+  color: var(--purple-primary);
+  background: none;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 560px) {
+  .workout-intro {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 22px;
+  }
+
+  .workout-option {
+    flex-wrap: wrap;
+  }
+
+  .workout-option .secondary-button {
+    margin-left: auto;
+  }
+}

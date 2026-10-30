@@ -1,0 +1,153 @@
+/* file name: index.css */
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+
+:root {
+  --purple-primary: #5759ef;
+  --purple-light: #f4f6ff;
+  --purple-dashed: 1px dashed #5759ef;
+  --purple-dashed-muted: 1px dashed rgba(87, 89, 239, 0.3);
+  --text-main: #0a0a0a;
+  --text-muted: #6c757d;
+  --font-mono: 'DM Mono', monospace;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--text-main);
+  background: #f9feff;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.screen-content {
+  max-width: 1440px;
+  min-height: calc(100vh - 58px);
+  margin: 0 auto;
+  padding: 28px 4%;
+}
+
+.screen-title {
+  margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.screen-subtitle {
+  margin: 0 0 26px;
+  color: var(--text-muted);
+  font-size: 13px;
+  font-family: var(--font-mono);
+}
+
+/* The core card style applied everywhere */
+.card {
+  padding: 22px;
+  background: #fff;
+  border: var(--purple-dashed);
+  border-radius: 4px;
+  box-shadow: 4px 4px 0 rgba(87, 89, 239, 0.08);
+}
+
+.primary-button {
+  border: 1px solid var(--purple-primary);
+  border-radius: 4px;
+  padding: 12px 18px;
+  color: #fff;
+  background: var(--purple-primary);
+  font-weight: 600;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+}
+
+.primary-button:hover {
+  background: #4446d9;
+}
+
+.secondary-button {
+  border: 1px solid var(--purple-primary);
+  border-radius: 4px;
+  padding: 11px 16px;
+  color: var(--purple-primary);
+  background: #fff;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+}
+
+.secondary-button:hover {
+  background: var(--purple-light);
+}
+
+.form-field {
+  display: grid;
+  gap: 7px;
+  margin-bottom: 17px;
+}
+
+.form-field label {
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+}
+
+.form-field input,
+.form-field select {
+  width: 100%;
+  padding: 12px 13px;
+  border: var(--purple-dashed);
+  border-radius: 4px;
+  outline: none;
+  background: #fff;
+  font-family: var(--font-sans);
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  border-color: var(--purple-primary);
+  box-shadow: 0 0 0 2px rgba(87, 89, 239, 0.2);
+}
+
+@media (max-width: 700px) {
+  .screen-content {
+    padding: 20px 15px;
+  }
+
+  .screen-title {
+    font-size: 24px;
+  }
+}

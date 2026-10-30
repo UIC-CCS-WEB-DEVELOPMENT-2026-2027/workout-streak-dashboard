@@ -1,0 +1,180 @@
+/* file name: workoutSummary.css */
+.summary-page {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background: #f9feff;
+  min-height: calc(100vh - 70px);
+}
+
+.summary-card {
+  width: 100%;
+  max-width: 650px;
+  background: #ffffff;
+  border: var(--purple-dashed);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 4px;
+  box-shadow: 4px 4px 0 rgba(87, 89, 239, 0.08);
+}
+
+.summary-header {
+  text-align: center;
+  border-bottom: var(--purple-dashed-muted);
+  padding-bottom: 25px;
+}
+
+.summary-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--purple-primary);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.summary-title {
+  font-family: var(--font-sans);
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin: 10px 0 5px;
+}
+
+.summary-subtitle {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.summary-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.stat-box {
+  background: var(--purple-light);
+  border: var(--purple-dashed-muted);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 4px;
+}
+
+.stat-value {
+  font-family: var(--font-sans);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--purple-primary);
+  line-height: 1;
+}
+
+.summary-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-list h3 {
+  margin-bottom: 15px;
+}
+
+.summary-item {
+  display: flex;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: var(--purple-dashed-muted);
+}
+
+.summary-item:last-child {
+  border-bottom: none;
+}
+
+.summary-icon {
+  font-size: 1.2rem;
+  margin-right: 15px;
+  width: 30px;
+  text-align: center;
+}
+
+.summary-info {
+  flex: 1;
+}
+
+.summary-exercise-name {
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.summary-exercise-time {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.summary-metrics {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.summary-metrics strong {
+  font-family: var(--font-sans);
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.summary-metrics strong span {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #94a3b8;
+}
+
+.text-green {
+  color: #16a34a;
+}
+
+.text-orange {
+  color: #ea580c;
+}
+
+.summary-save-btn {
+  background: var(--purple-primary);
+  color: #ffffff;
+  border: 1px solid var(--purple-primary);
+  border-radius: 4px;
+  padding: 18px;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.summary-save-btn:hover {
+  background: #ffffff;
+  color: var(--purple-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(87, 89, 239, 0.15);
+}
+
+@media (max-width: 500px) {
+  .summary-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-card {
+    padding: 25px;
+  }
+}

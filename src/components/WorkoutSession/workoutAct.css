@@ -1,0 +1,65 @@
+/* file name: workoutAct.css */
+
+.active-workout-page {
+  width: 100%;
+  max-width: 100%; /* Removed the 800px/1200px limit entirely */
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+.back-link {
+  margin-bottom: 18px;
+  padding: 0;
+  border: 0;
+  color: #626d88;
+  background: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.back-link:hover {
+  color: #292f48;
+}
+
+/* Used for the resting screen container */
+.active-workout-card {
+  padding: 35px 22px;
+  border: 1px solid #edf0f6;
+  border-radius: 20px;
+  background: #fff;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.active-label {
+  color: #5759ef;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.active-workout-card h1 {
+  margin: 12px 0;
+  font-size: 30px;
+}
+
+.timer-display {
+  color: #292f48;
+  font-size: 48px;
+  font-weight: 750;
+  font-variant-numeric: tabular-nums;
+}
+
+.timer-caption {
+  color: #8791aa;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  display: block;
+}

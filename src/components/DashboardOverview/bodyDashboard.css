@@ -1,0 +1,32 @@
+.body-dashboard {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.body-dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.body-dashboard-grid h2 {
+  font-size: 17px;
+}
+
+.body-dashboard-grid p {
+  color: #8791aa;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.body-dashboard-icon {
+  color: #5759ef;
+  font-size: 25px;
+}
+
+@media (max-width: 600px) {
+  .body-dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}

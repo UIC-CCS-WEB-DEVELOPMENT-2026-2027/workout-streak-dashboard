@@ -1,0 +1,78 @@
+/* file name: progress.css */
+.progress-page {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.progress-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.progress-summary .card {
+  display: grid;
+  gap: 10px;
+}
+
+.progress-summary span,
+.progress-summary small {
+  color: var(--text-muted);
+  font-size: 11px;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.progress-summary strong {
+  font-size: 28px;
+  color: var(--purple-primary);
+  font-weight: 800;
+}
+
+.progress-detail {
+  margin-bottom: 18px;
+}
+
+.progress-detail h2 {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.progress-detail p {
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.7;
+  font-family: var(--font-mono);
+}
+
+.progress-track {
+  height: 8px;
+  margin: 18px 0 10px;
+  overflow: hidden;
+  border-radius: 0;
+  background: var(--purple-light);
+  border: 1px solid var(--purple-light);
+}
+
+.progress-fill {
+  width: 80%;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--purple-primary);
+}
+
+.progress-detail>strong {
+  color: var(--purple-primary);
+  font-size: 12px;
+  font-family: var(--font-mono);
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .progress-summary {
+    grid-template-columns: 1fr;
+  }
+}
