@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import "./workoutlog.css";
+import "./workoutLog.css";
 
 function WorkoutLog({ onNavigate }) {
   const [name, setName] = useState("Jumping jacks");
